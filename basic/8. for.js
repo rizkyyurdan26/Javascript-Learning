@@ -8,7 +8,7 @@ for (let i = 0; i < 3; i++){
 
 const arr = ['a', 'b', 'c']
 
-for (i of arr) {
+for (let i of arr) {
     console.log(i)
 }
 
