@@ -1,0 +1,9 @@
+- Penjelasan Reduce, Filter, Map, Find, FindIndex, Some, Every
+
+1. Reduce => reduce itu menghitung dari sekumpulan data dan mengembalikan 1 hasil perhitungan
+2. filter => filter untuk menyeleksi data berdasarkan ketentuan tertentu, dan mengembalikan data yang sesuai dengan ketentuan
+3. map => map untuk memindahkan data ke tempat yang baru dengan ketentuan tertentu, contoh: pindahkan data nama dari object 
+4. find => find untuk menemukan data sesuai ketentuan yang dicari
+5. finIndex => untuk menemukan index dari data yang dicari
+6. some => untuk mencari apakah ada data yang sesuai ketentuan
+7. every => untuk mencari apakah semua data sesuai dengan ketentuan
