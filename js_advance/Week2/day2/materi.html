@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Anggap kita punya elemen ini di HTML -->
+    <div id="kartu-profil" class="kartu">
+      <h3 id="nama-user">Budi</h3>
+    </div>
+  </body>
+
+  <script>
+    // 1. Seleksi dulu elemennya (Materi Hari 1)
+    const namaUser = document.getElementById("nama-user");
+    const kartuProfil = document.getElementById("kartu-profil");
+
+    // 2. Manipulasi Konten
+    namaUser.innerText = "Budi Santoso"; // Teks berubah
+    kartuProfil.innerHTML = "<h3 id='nama-user'>Budi Santoso</h3><p>Aktif</p>"; // Menambah tag <p> baru di dalamnya
+
+    // 3. Manipulasi Style (Inline)
+    namaUser.style.color = "blue"; // Mengubah warna teks h3
+    kartuProfil.style.backgroundColor = "lightgray";
+
+    // 4. Manipulasi Class
+    kartuProfil.classList.add("kartu-premium"); // Menambah class .kartu-premium ke dalam div
+  </script>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <div id="app">
+      <h1 id="pesan-utama">Halo, Dunia!</h1>
+      <p class="status">Sistem sedang dimuat...</p>
+      <button id="btn" onclick="handleMode()">Change Mode</button>
+    </div>
+
+    <script>
+      const ubahText = document.getElementById("pesan-utama");
+      setTimeout(() => {
+        ubahText.innerText = "Sistem Berhasil Aktif";
+      }, 1000);
+
+      const ubahWarna = document.querySelector(".status");
+      ubahWarna.style.color = "green";
+
+      const app = document.getElementById("app");
+      app.classList.add("mode-cerah");
+
+      function handleMode() {
+        app.classList.toggle("mode-gelap");
+        if (app.classList.contains("mode-gelap")) {
+          app.style.backgroundColor = "black";
+          ubahText.style.color = 'white'
+        } else {
+            app.style.backgroundColor = "white";
+            ubahText.style.color = 'black'
+        }
+      }
+    </script>
+  </body>
+</html>

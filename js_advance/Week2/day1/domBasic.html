@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="nama-produk">Sepatu Lari Kece</h2>
+
+      <div class="kategori-container">
+        <span class="badge">Olahraga</span>
+        <span class="badge">Pria</span>
+        <span class="badge">Diskon</span>
+      </div>
+
+      <button onclick="trigerrButton()" class="btn-beli">Beli Sekarang</button>
+    </div>
+  </body>
+
+  <script>
+    const judulProduct = document.getElementById('nama-produk')
+    console.log(judulProduct)
+
+    const tombolBeli = document.querySelector('.btn-beli')
+    console.log(tombolBeli)
+
+    const trigerrButton = () => {
+        if (tombolBeli){
+           return alert('Button Clicked')
+        }
+    }
+
+    const allParagraf = document.querySelectorAll(".badge")
+    console.log(allParagraf)
+
+  </script>
+</html>

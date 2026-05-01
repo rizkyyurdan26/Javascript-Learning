@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="daftar-belanja">
+      <li id="item1">Apple</li>
+    </ul>
+
+    <script>
+      const daftar = document.getElementById("daftar-belanja");
+
+      // Add new element
+      const newItem = document.createElement("li");
+      newItem.innerText = "Banana";
+
+      // Enter element
+      daftar.appendChild(newItem);
+
+      // Remove
+      const item = document.getElementById("item1");
+      item.remove();
+    </script>
+  </body>
+</html>

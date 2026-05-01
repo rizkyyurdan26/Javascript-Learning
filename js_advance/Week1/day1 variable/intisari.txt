@@ -1,0 +1,3 @@
+Tipe Data Tunggal (Primitif seperti Angka/Teks): let nilainya bisa diubah-ubah, sedangkan const mati kutu (terkunci total sejak awal).
+
+Tipe Data Kompleks (Array/Object): let dan const sama-sama bisa dimutasi isinya. Perbedaan mutlaknya hanya pada reassign (menukar laci/remot secara total), di mana let mengizinkan, sedangkan const akan langsung menolaknya dengan error.
